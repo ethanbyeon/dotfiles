@@ -1,0 +1,191 @@
+{
+  /* ===========
+        THEME
+     =========== */
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.colorCustomizations": {
+      "list.highlightForeground": "#E8DEC9",
+  },
+  "catppuccin.accentColor": "yellow",
+  "catppuccin.colorOverrides": {
+    "all": {
+      "yellow": "#B89E7A"
+    },
+    "mocha": {
+      "base": "#000000",
+      "mantle": "#000000",
+      "crust": "#000000"
+    }
+  },
+
+  /* ============
+        EDITOR
+     ============ */
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 16,
+  "editor.tabSize": 2,
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "trailing",
+  "editor.suggest.insertMode": "replace",
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 80,
+  // SCROLL
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.smoothScrolling": true,
+  "editor.stickyScroll.enabled": false,
+  // CURSOR & LINES
+  "editor.cursorSurroundingLines": 10,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.lineNumbers": "relative",
+  "editor.overviewRulerBorder": false,
+
+  /* ============
+        WINDOW
+     ============ */
+  "window.commandCenter": false,
+  "window.menuBarVisibility": "classic",
+  "window.title": "",
+  "window.titleBarStyle": "custom",
+
+  /* ===============
+        WORKBENCH
+     =============== */
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.editor.showTabs": "single",
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.limit.value": 1,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.layoutControl.enabled": false,
+  "workbench.list.smoothScrolling": true,
+  "workbench.settings.editor": "json",
+  "workbench.sideBar.location": "left",
+  "workbench.startupEditor": "none",
+  "workbench.tree.indent": 10,
+
+  /* ==============
+        TERMINAL
+     ============== */
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.smoothScrolling": true,
+
+  /* ==========
+        MISC
+     ========== */
+  "breadcrumbs.enabled": false,
+  "files.trimTrailingWhitespace": true,
+
+  /* ===================
+        APC CUSTOM UI
+     =================== */
+  "apc.statusBar": {
+    "position": "editor-bottom",
+    "height": 32,
+    "fontSize": 14
+  },
+  "apc.stylesheet": {
+    // COMMAND PALETTE
+    ".quick-input-widget": {
+      "position": "absolute !important",
+      "top": "25% !important",
+      "left": "45% !important",
+      "width": "50% !important",
+      "border": "1px solid #2C2721 !important",
+      "border-radius": "5px !important",
+      "font-size": "16px !important"
+    },
+    ".quick-input-widget .monaco-inputbox": {
+      "background-color": "#000000 !important",
+      "border-radius": "5px !important",
+      "font-size": "16px !important",
+      "padding": "5px 0px 5px 5px !important"
+    },
+    ".quick-input-list": {
+      "padding": "10px 0px !important"
+    },
+    ".quick-input-list .focused": {
+      "background-color": "#B89E7A !important",
+      "color": "#000000 !important",
+      "font-weight": "bold"
+    },
+    ".quick-input-header": {
+      "font-size": "16px !important"
+    },
+    ".input": {
+      "color": "#C6B99F !important"
+    },
+    // STATUS BAR
+    ".statusbar": {
+      "color": "#C6B99F !important"
+    },
+    // EXPLORER
+    ".monaco-workbench .part>.content": {
+      "font-size": "14px !important"
+    }
+  },
+
+  /* =========
+        VIM
+     ========= */
+  "vim.leader": "<space>",
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.autoindent": true,
+  "vim.ignorecase": true,
+  "vim.textwidth": 80,
+  "vim.highlightedyank.color": "#50E4AA",
+  "vim.highlightedyank.textColor": "#F0F0F0",
+  "vim.highlightedyank.enable": true,
+  "vim.searchMatchColor": "#50E4AA",
+  "vim.searchMatchTextColor": "#000000",
+
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["leader", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["leader", "q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["leader", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["leader", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.mark.next"]
+    },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.mark.prev"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["leader", "c"],
+      "commands": ["editor.action.commentLine"]
+    }
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
