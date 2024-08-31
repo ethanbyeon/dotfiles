@@ -9,7 +9,7 @@
   "catppuccin.accentColor": "yellow",
   "catppuccin.colorOverrides": {
     "all": {
-      "yellow": "#B89E7A"
+      "yellow": "#B3A180"
     },
     "mocha": {
       "base": "#000000",
@@ -99,7 +99,7 @@
       "top": "25% !important",
       "left": "45% !important",
       "width": "50% !important",
-      "border": "1px solid #2C2721 !important",
+      "border": "1px solid #0E3733 !important",
       "border-radius": "5px !important",
       "font-size": "16px !important"
     },
@@ -113,7 +113,7 @@
       "padding": "10px 0px !important"
     },
     ".quick-input-list .focused": {
-      "background-color": "#B89E7A !important",
+      "background-color": "#B3A180 !important",
       "color": "#000000 !important",
       "font-weight": "bold"
     },
@@ -121,11 +121,11 @@
       "font-size": "16px !important"
     },
     ".input": {
-      "color": "#C6B99F !important"
+      "color": "#E8DEC9 !important"
     },
     // STATUS BAR
     ".statusbar": {
-      "color": "#C6B99F !important"
+      "color": "#B3A180 !important"
     },
     // EXPLORER
     ".monaco-workbench .part>.content": {
