@@ -25,7 +25,7 @@
     "source.addMissingImports": "explicit",
     "source.organizeImports": "explicit"
   },
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "JetBrainsMonoNL Nerd Font Mono",
   "editor.fontSize": 16,
   "editor.tabSize": 2,
   "editor.linkedEditing": true,
@@ -74,7 +74,7 @@
   /* ==============
         TERMINAL
      ============== */
-  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontFamily": "JetBrainsMonoNL Nerd Font Mono",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.smoothScrolling": true,
 
@@ -187,5 +187,5 @@
   ],
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
 }
