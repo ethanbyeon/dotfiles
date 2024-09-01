@@ -1,5 +1,14 @@
 // Place your key bindings in this file to override the defaults
 [
+  // EDITOR
+  {
+    "key": "tab",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "shift+tab",
+    "command": "workbench.action.previousEditor"
+  }
   // EXPLORER
   {
     "key": "ctrl+e",
