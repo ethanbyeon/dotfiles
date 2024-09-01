@@ -1,14 +1,5 @@
 // Place your key bindings in this file to override the defaults
 [
-  // EDITOR
-  {
-    "key": "tab",
-    "command": "workbench.action.nextEditor"
-  },
-  {
-    "key": "shift+tab",
-    "command": "workbench.action.previousEditor"
-  }
   // EXPLORER
   {
     "key": "ctrl+e",
@@ -45,6 +36,16 @@
     "when": "filesExplorerFocus && !inputFocus"
   },
   // NAVIGATION
+  {
+    "key": "tab",
+    "command": "workbench.action.nextEditor",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+  },
+  {
+    "key": "shift+tab",
+    "command": "workbench.action.previousEditor",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+  }
   {
     "key": "ctrl+h",
     "command": "workbench.action.focusLeftGroup",
