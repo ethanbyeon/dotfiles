@@ -30,7 +30,6 @@
 > cp -r "$HOME/.config/Code/User.bak" "$HOME/.config/Code/User"
 > ```
 > </details>
-> ```
 
 ## Installation
 
