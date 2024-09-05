@@ -11,4 +11,5 @@
 └── README.md
 ```
 
-[Neovim Config](.config/nvim/README.md)
+[Neovim Config](.config/nvim/README.md) \
+[VSCode Config](./vscode/README.md)

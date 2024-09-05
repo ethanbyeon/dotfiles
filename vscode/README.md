@@ -1,5 +1,45 @@
 # EYB's VSCode Setup
 
+[Back to Main README](../README.md)
+
+## Backup Current Setup
+
+Back up your VSCode settings before changing them, so you can restore them if needed.
+
+#### macOS:
+```bash
+cp -r "$HOME/Library/Application Support/Code/User" "$HOME/Library/Application Support/Code/User.bak"
+```
+#### Linux:
+```bash
+cp -r "$HOME/.config/Code/User" "$HOME/.config/Code/User.bak"
+```
+
+### Restore Backup (if needed)
+<details>
+  <summary>To revert to your original configuration, restore the backup by copying it back to its original location:</summary>
+
+  #### macOS:
+  ```bash
+  cp -r "$HOME/Library/Application Support/Code/User.bak" "$HOME/Library/Application Support/Code/User"
+  ```
+  #### Linux:
+  ```bash
+  cp -r "$HOME/.config/Code/User.bak" "$HOME/.config/Code/User"
+  ```
+</details>
+
+## Installation
+
+Replace your existing configuration files with `keybindings.json` and `settings.json` in the VSCode User folder.
+
+### macOS:
+```bash
+cp -i keybindings.json settings.json "$HOME/Library/Application Support/Code/User"
+```
+
+**Restart or reload VSCode to ensure the changes are applied.**
+
 ## Keybindings
 
 <details>

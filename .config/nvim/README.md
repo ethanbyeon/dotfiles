@@ -3,7 +3,7 @@
 ## Neovim Directory Tree
 
 ```
-nvim/
+~/.config/nvim/
 ├── lua/
 │   ├── plugins/
 │   │   ├── lsp/
