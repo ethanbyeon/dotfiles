@@ -4,6 +4,8 @@
      =========== */
   "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.colorCustomizations": {
+      "editorCursor.foreground": "#50E4AA",
+      "editorCursor.background": "#000000",
       "list.highlightForeground": "#E8DEC9",
   },
   "catppuccin.accentColor": "yellow",
@@ -144,7 +146,7 @@
   "vim.ignorecase": true,
   "vim.textwidth": 80,
   "vim.highlightedyank.color": "#50E4AA",
-  "vim.highlightedyank.textColor": "#F0F0F0",
+  "vim.highlightedyank.textColor": "#000000",
   "vim.highlightedyank.enable": true,
   "vim.searchMatchColor": "#50E4AA",
   "vim.searchMatchTextColor": "#000000",
