@@ -1,0 +1,65 @@
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_status\
+$git_metrics\
+$fill\
+$cmd_duration $jobs $time\
+$line_break\
+$character
+"""
+
+add_newline = false # Disable blank line at the start of prompt
+
+[fill]
+symbol = " "
+
+[username]
+show_always = true
+style_user = "fg:#24655D"
+format = '[$user]($style) [󱗼](fg:#0E3733) '
+
+[directory]
+style = "fg:#A1E8E2"
+read_only = ""
+read_only_style = "fg:#A1E8E2"
+format = "[$path]($style) [$read_only]($read_only_style) "
+truncation_length = 3
+truncate_to_repo = false
+
+[git_branch]
+symbol = ""
+style = "fg:#24655D"
+format = "[](fg:#0E3733) [$branch $symbol]($style) "
+
+[git_status]
+style = "fg:#A1E8E2"
+format = '([\[$all_status$ahead_behind\]]($style) )'
+
+[git_metrics]
+disabled = false
+added_style = "green"
+deleted_style = "fg:#D9071E"
+only_nonzero_diffs = true
+format = "[+$added]($added_style) [-$deleted]($deleted_style) "
+
+[jobs]
+symbol = ""
+style = "fg:#D9071E"
+number_threshold = 1
+format = "[$symbol]($style)"
+
+[cmd_duration]
+style = "fg:#A1E8E2"
+format = "[$duration]($style)"
+
+[time]
+disabled = false
+style = "fg:#24655D"
+format = "[󱗼](fg:#0E3733) [$time]($style) [󰚉](fg:#0E3733) "
+
+[character]
+success_symbol = "[](fg:#24655D)"
+error_symbol = "[](fg:#D9071E)"

@@ -6,6 +6,7 @@
 ~/dotfiles/
 ├── .config/
 │   ├── nvim/
+│   ├── starship/
 │   └── tmux/
 ├── vscode/
 └── README.md

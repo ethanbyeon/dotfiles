@@ -149,7 +149,7 @@ local function setup_heirline()
 		provider = function(self)
 			local file_path = " " .. vim.fn.fnamemodify(self.filename, ":.") .. " "
 			if file_path == "" then
-				return "[No Name] "
+				return " [No Name] "
 			end
 			if not conditions.width_percent_below(#file_path, 0.25) then
 				file_path = vim.fn.pathshorten(file_path)
@@ -330,7 +330,7 @@ local function setup_heirline()
 	heirline.setup({
 		statusline = {
 			ViMode,
-			Git,
+            Git,
 			FileNameBlock,
 			Space,
 			{ provider = "%=" }, -- Align
