@@ -15,6 +15,10 @@
 > ```bash
 > cp -r "$HOME/.config/Code/User" "$HOME/.config/Code/User.bak"
 > ```
+> #### Windows
+> ```bash
+> cp -r "%APPDATA%\Code\User" "%APPDATA%\Code\User.bak"
+> ```
 
 ### Restore Backup (if needed)
 > [!TIP]
@@ -28,6 +32,10 @@
 > #### Linux
 > ```bash
 > cp -r "$HOME/.config/Code/User.bak" "$HOME/.config/Code/User"
+> ```
+> #### Windows
+> ```bash
+> cp -r "%APPDATA%\Code\User.bak" "%APPDATA%\Code\User"
 > ```
 > </details>
 
