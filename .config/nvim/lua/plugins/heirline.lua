@@ -74,7 +74,7 @@ local function setup_heirline()
 		update = { "ModeChanged" },
 		provider = function(self)
 			local mode = self.mode:sub(1, 1)
-			return string.format(" %s 󱗼 ", self.MODE_NAMES[mode])
+			return string.format(" %s 󰀻 ", self.MODE_NAMES[mode])
 		end,
 		hl = { bg = "#000000", fg = "#85E0D9" },
 	}
@@ -336,12 +336,11 @@ local function setup_heirline()
 			{ provider = "%=" }, -- Align
 			{ provider = "%<" },
 			Diagnostics,
-            -- create_symbol("", "#000000", "#0E3733"),
-			create_symbol(" 󱗼", "#000000", "#0E3733"),
+			create_symbol(" 󰀻", "#000000", "#0E3733"),
 			FileEncoding,
-			create_symbol("󱗼", "#000000", "#0E3733"),
+			create_symbol("󰀻", "#000000", "#0E3733"),
 			create_symbol(" %3l:%c ", "#000000", "#1C4F49"),
-			create_symbol("󱗼 ", "#000000", "#0E3733"),
+			create_symbol("󰀻 ", "#000000", "#0E3733"),
 		},
 		-- tabline = {
 		-- 	TabLineOffset,
