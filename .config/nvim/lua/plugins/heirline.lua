@@ -74,65 +74,9 @@ local function setup_heirline()
 		update = { "ModeChanged" },
 		provider = function(self)
 			local mode = self.mode:sub(1, 1)
-			return string.format(" %s 󰀻 ", self.MODE_NAMES[mode])
+			return string.format(" %s ", self.MODE_NAMES[mode])
 		end,
-		hl = { bg = "#000000", fg = "#85E0D9" },
-	}
-
-	local Git = {
-		init = function(self)
-			self.status_dict = vim.b.gitsigns_status_dict
-		end,
-		condition = conditions.is_git_repo,
-		{ -- Git Branch Name
-			provider = function(self)
-				if self.status_dict.head == "" then
-					return " Unknown  "
-				end
-				return " " .. self.status_dict.head .. "  "
-			end,
-			hl = { bold = false },
-		},
-		hl = { bg = "#000000", fg = "#24655D" },
-	}
-
-	local Diagnostics = {
-		static = {
-			error_icon = "E",
-			warn_icon = "W",
-			hint_icon = "H",
-		},
-		init = function(self)
-			self.errors = #vim.diagnostic.get(0, { severity = vim.diagnostic.severity.ERROR })
-			self.warnings = #vim.diagnostic.get(0, { severity = vim.diagnostic.severity.WARN })
-			self.hints = #vim.diagnostic.get(0, { severity = vim.diagnostic.severity.HINT })
-		end,
-		update = { "DiagnosticChanged", "BufEnter" },
-		{ -- Error
-			provider = function(self)
-				return " " .. self.errors .. self.error_icon .. " "
-			end,
-			hl = function(self)
-				return self.errors > 0 and { fg = "#A1E8E2" }
-			end,
-		},
-		{ -- Warn
-			provider = function(self)
-				return self.warnings .. self.warn_icon .. " "
-			end,
-			hl = function(self)
-				return self.warnings > 0 and { fg = "#A1E8E2" }
-			end,
-		},
-		-- { -- Hint
-		-- 	provider = function(self)
-		-- 		return self.hints .. self.hint_icon .. " "
-		-- 	end,
-		-- 	hl = function(self)
-		-- 		return self.hints > 0 and { fg = "#A1E8E2" }
-		-- 	end,
-		-- },
-		hl = { bg = "#000000", fg = "#0E3733" },
+		hl = { bg = "#000000", fg = "#438C83" },
 	}
 
     ---------------
@@ -147,16 +91,16 @@ local function setup_heirline()
 			name = "heirline_nvimtree",
 		},
 		provider = function(self)
-			local file_path = " " .. vim.fn.fnamemodify(self.filename, ":.") .. " "
+			local file_path = vim.fn.fnamemodify(self.filename, ":.") .. " "
 			if file_path == "" then
-				return " [No Name] "
+				return "[No Name] "
 			end
 			if not conditions.width_percent_below(#file_path, 0.25) then
 				file_path = vim.fn.pathshorten(file_path)
 			end
 			return file_path
 		end,
-		hl = { bg = "#000000", fg = "#24655D" },
+		hl = { bg = "#000000", fg = "#A1E8E2" },
 	}
 
 	local FileFlags = {
@@ -179,7 +123,6 @@ local function setup_heirline()
 			self.filename = vim.api.nvim_buf_get_name(0)
 		end,
 		condition = conditions.buffer_not_empty,
-		h1 = { bg = "#000000", fg = "#1C4F49" },
 		FilePath,
 		FileFlags,
 	}
@@ -190,6 +133,71 @@ local function setup_heirline()
 			return (" %s "):format(enc:upper())
 		end,
 		hl = { bg = "#000000", fg = "#1C4F49" },
+	}
+
+    ---------
+	-- GIT --
+    ---------
+
+	local Git = {
+		init = function(self)
+			self.status_dict = vim.b.gitsigns_status_dict
+		end,
+		condition = conditions.is_git_repo,
+        create_symbol(" 󰇛", "#000000", "#4C4C4C"),
+		{ -- Git Branch Name
+			provider = function(self)
+				if self.status_dict.head == "" then
+					return " Unknown  "
+				end
+				return " " .. self.status_dict.head .. "  "
+			end,
+			hl = { bold = false },
+		},
+		hl = { bg = "#000000", fg = "#A6A6A6" },
+	}
+
+    -----------------
+	-- DIAGNOSTICS --
+    -----------------
+
+	local Diagnostics = {
+		static = {
+			error_icon = "E",
+			warn_icon = "W",
+			hint_icon = "H",
+		},
+		init = function(self)
+			self.errors = #vim.diagnostic.get(0, { severity = vim.diagnostic.severity.ERROR })
+			self.warnings = #vim.diagnostic.get(0, { severity = vim.diagnostic.severity.WARN })
+			self.hints = #vim.diagnostic.get(0, { severity = vim.diagnostic.severity.HINT })
+		end,
+		update = { "DiagnosticChanged", "BufEnter" },
+		{ -- Error
+			provider = function(self)
+				return " " .. self.errors .. self.error_icon .. " "
+			end,
+			hl = function(self)
+				return self.errors > 0 and { fg = "#D9071E" }
+			end,
+		},
+		{ -- Warn
+			provider = function(self)
+				return self.warnings .. self.warn_icon .. " "
+			end,
+			hl = function(self)
+				return self.warnings > 0 and { fg = "#DE970D" }
+			end,
+		},
+		-- { -- Hint
+		-- 	provider = function(self)
+		-- 		return self.hints .. self.hint_icon .. " "
+		-- 	end,
+		-- 	hl = function(self)
+		-- 		return self.hints > 0 and { fg = "#A1E8E2" }
+		-- 	end,
+		-- },
+		hl = { bg = "#000000", fg = "#0E3733" },
 	}
 
     -------------
@@ -329,9 +337,11 @@ local function setup_heirline()
 
 	heirline.setup({
 		statusline = {
+            create_symbol(" 󰀻", "#000000", "#0E3733"),
 			ViMode,
-            Git,
+            create_symbol(" ", "#000000", "#0E3733"),
 			FileNameBlock,
+            Git,
 			Space,
 			{ provider = "%=" }, -- Align
 			{ provider = "%<" },

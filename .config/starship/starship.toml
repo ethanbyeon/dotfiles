@@ -18,8 +18,8 @@ symbol = " "
 
 [username]
 show_always = true
-style_user = "fg:#24655D"
-format = '[$user]($style) [󰀻](fg:#0E3733) '
+style_user = "fg:#438C83"
+format = "[$user]($style) [󰀻](fg:#0E3733) "
 
 [directory]
 style = "fg:#A1E8E2"
