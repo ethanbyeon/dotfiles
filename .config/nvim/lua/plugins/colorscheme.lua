@@ -20,8 +20,7 @@ local function setup_colorscheme()
             comments = {},
             conditionals = { "italic" },
         },
-        color_overrides =
-        {
+        color_overrides = {
             mocha = {
                 base = "#000000",
                 mantle = "#000000",
@@ -37,7 +36,11 @@ local function setup_colorscheme()
                 TelescopeSelectionCaret = { fg = "#655843" },
             },
         },
-        custom_highlights = {},
+        custom_highlights = function(colors)
+            return {
+                CursorLineNr = { fg = "#B3A180" },
+            }
+        end,
         integrations = {
             cmp = true,
             gitsigns = true,
