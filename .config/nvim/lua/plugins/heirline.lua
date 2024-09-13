@@ -186,7 +186,7 @@ local function setup_heirline()
 				return self.warnings .. self.warn_icon .. " "
 			end,
 			hl = function(self)
-				return self.warnings > 0 and { fg = "#DE970D" }
+				return self.warnings > 0 and { fg = "#DBBB14" }
 			end,
 		},
 		-- { -- Hint
