@@ -40,14 +40,14 @@ format = '([\[$all_status$ahead_behind\]]($style) )'
 
 [git_metrics]
 disabled = false
-added_style = "fg:#9FE570"
-deleted_style = "fg:#D9071E"
+added_style = "fg:#72E570"
+deleted_style = "fg:#D92135"
 only_nonzero_diffs = true
 format = "[+$added]($added_style) [-$deleted]($deleted_style) "
 
 [jobs]
 symbol = ""
-style = "fg:#D9071E"
+style = "fg:#D92135"
 number_threshold = 1
 format = "[$symbol]($style)"
 
@@ -62,4 +62,4 @@ format = "[󰀻](fg:#0E3733) [$time]($style) [󰀻](fg:#0E3733) "
 
 [character]
 success_symbol = "[](fg:#50E4AA)"
-error_symbol = "[](fg:#D9071E)"
+error_symbol = "[](fg:#D92135)"
