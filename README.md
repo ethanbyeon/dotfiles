@@ -3,25 +3,31 @@
 </div>
 
 <div align="center">
-  <img src="images/nvim_ss.png" alt="Neovim Config" width="75%" />
+  <img src="images/nvim_ss.png" alt="Neovim Config" width="90%" />
 
   <a href=".config/nvim/README.md">Neovim Config</a>
 </div>
 
+<br>
+
 <div align="center">
-  <img src="images/vscode_ss.png" alt="VS Code Config" width="75%" />
+  <img src="images/vscode_ss.png" alt="VS Code Config" width="90%" />
 
   <a href="vscode/README.md">VS Code Config</a>
 </div>
 
+<br>
+
 <div align="center">
-  <img src="images/starship_ss.png" alt="Starship Config" width="75%" />
+  <img src="images/starship_ss.png" alt="Starship Config" width="90%" />
 
   Starship Config
 </div>
 
+<br>
+
 <div align="center">
-  <img src="images/tmux_ss.png" alt="tmux Config" width="75%" />
+  <img src="images/tmux_ss.png" alt="tmux Config" width="90%" />
 
   tmux Config
 </div>
