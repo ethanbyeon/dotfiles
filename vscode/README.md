@@ -1,5 +1,7 @@
 # EYB's VSCode Setup
 
+![VS Code Screenshot](../images/vscode_ss.png)
+
 [Back to Main README](../README.md)
 
 ## Backup Current Setup

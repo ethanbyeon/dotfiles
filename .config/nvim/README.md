@@ -1,5 +1,9 @@
 # EYB's Neovim Setup
 
+![Neovim Screenshot](../../images/nvim_ss.png)
+
+[Back to Main README](../../README.md)
+
 ## Neovim Directory Tree
 
 ```
@@ -66,6 +70,3 @@ Extra features and utilities:
 - **Startup Dashboard**: [dashboard-nvim](https://github.com/nvimdev/dashboard-nvim)
 - **Git Decorations**: [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 - **Indentation Guides**: [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
-
-
-[Back to Main README](../../README.md)
