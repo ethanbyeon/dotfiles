@@ -16,9 +16,9 @@ local function setup_heirline()
 		end,
 	})
 
-  -----------------
+  	-----------------
 	-- STATUS LINE --
-  -----------------
+  	-----------------
 
 	local ViMode = {
 		init = function(self)
@@ -79,9 +79,9 @@ local function setup_heirline()
 		hl = { bg = "#000000", fg = "#438C83" },
 	}
 
-  ---------------
+  	---------------
 	-- FILE INFO --
-  ---------------
+  	---------------
 
 	local FilePath = {
 		on_click = {
@@ -135,9 +135,9 @@ local function setup_heirline()
 		hl = { bg = "#000000", fg = "#1C4F49" },
 	}
 
-  ---------
+  	---------
 	-- GIT --
-  ---------
+  	---------
 
 	local Git = {
 		init = function(self)
@@ -157,9 +157,9 @@ local function setup_heirline()
 		hl = { bg = "#000000", fg = "#A6A6A6" },
 	}
 
-  -----------------
+  	-----------------
 	-- DIAGNOSTICS --
-  -----------------
+  	-----------------
 
 	local Diagnostics = {
 		static = {
@@ -200,9 +200,9 @@ local function setup_heirline()
 		hl = { bg = "#000000", fg = "#0E3733" },
 	}
 
-  -------------
+  	-------------
 	-- TABLINE --
-  -------------
+  	-------------
 
 	-- local function highlight_buf(self)
 	-- 	if self.is_active or self.is_visible then
