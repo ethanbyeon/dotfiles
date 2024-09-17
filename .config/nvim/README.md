@@ -1,10 +1,12 @@
-# EYB's Neovim Setup
+<div align="center">
+  <h1>EYB's Neovim Setup</h1>
+</div>
 
 ![Neovim Screenshot](../../images/nvim_ss.png)
 
 [Back to Main README](../../README.md)
 
-## Neovim Directory Tree
+## Directory Structure
 
 ```
 ~/.config/nvim/
