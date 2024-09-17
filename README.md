@@ -63,7 +63,7 @@ To move your current configurations into your dotfiles repository, use the `--ad
 stow <package> --adopt
 ```
 
-This command will move any existing files (e.g., `~/.zshrc`) into your dotfiles repository. Ensure the repository's directory structure matches your system's files paths.
+This command will move any existing files (e.g., `~/.zshrc`) into your dotfiles repository. Ensure the repository's directory structure matches your system's file paths.
 
 > [!WARNING]
 > The `--adopt` flag will overwrite any files in the repository with the same name as those being moved.
@@ -77,4 +77,4 @@ This command will move any existing files (e.g., `~/.zshrc`) into your dotfiles 
 stow <package>
 ```
 
-This will link the configuration files from your dotfiles repository to their corresponding locations on your system (e.g., `~/.config/nvim/`)
+This will link the configuration files from your dotfiles repository to their corresponding locations on your system (e.g., `~/.config/nvim/`).
