@@ -56,7 +56,7 @@
 
 [GNU Stow](https://www.gnu.org/software/stow/manual/stow.html) helps manage and symlink configuration files from your dotfiles repository to their appropriate locations. Follow these steps to set it up:
 
-### Backing Up Existing Configurations
+### 🔄 Backing Up Existing Configurations
 
 To move your current configurations into your dotfiles repository, use the `--adopt` flag:
 ```
@@ -68,7 +68,7 @@ This command will move any existing files (e.g., `~/.zshrc`) into your dotfiles 
 > [!WARNING]
 > The `--adopt` flag will overwrite any files in the repository with the same name as those being moved.
 
-### Symlinking Configurations
+### 🔗 Symlinking Configurations
 
 1. Clone the repository and navigate into its directory.
 
