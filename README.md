@@ -54,6 +54,9 @@
 
 ## Installation
 
+> [!NOTE]
+> If you have existing configuration files you want to manage, please refer to the [Using GNU Stow](#using-gnu-stow) section for guidance on backing up and handling your current setups.
+
 To set up these dotfiles using GNU Stow, follow the steps below:
 
 1. **Clone the repository**:
@@ -62,9 +65,7 @@ To set up these dotfiles using GNU Stow, follow the steps below:
     git clone https://github.com/ethanbyeon/dotfiles.git dotfiles
     cd dotfiles/
     ```
-2. **Install GNU Stow**
-
-    If GNU Stow isn't already installed, use your package manager:
+2. **Install GNU Stow**:
 
     For macOS (Homebrew):
     ```
@@ -80,11 +81,8 @@ To set up these dotfiles using GNU Stow, follow the steps below:
 
     Replace `<package>` with the directory name of the configuration you want to symlink (e.g., `nvim`, `zsh`).
 
-4. **Verify Installation**:
-
-    After running the `stow` command, confirm that the configuration files are correctly placed and loaded on your system.
-
-    For more detailed usage of Stow, including how to back up existing configurations and avoid overwriting files, see the [Using GNU Stow](#using-gnu-stow) section below.
+    > [!TIP]
+    > After running the `stow` command, confirm that the configuration files are correctly placed and loaded on your system.
 
 ## Using GNU Stow
 
