@@ -81,8 +81,8 @@ To set up these dotfiles using GNU Stow, follow the steps below:
 
     Replace `<package>` with the directory name of the configuration you want to symlink (e.g., `nvim`, `zsh`).
 
-    > [!TIP]
-    > After running the `stow` command, confirm that the configuration files are correctly placed and loaded on your system.
+> [!TIP]
+> After running the `stow` command, confirm that the configuration files are correctly placed and loaded on your system.
 
 ## Using GNU Stow
 
