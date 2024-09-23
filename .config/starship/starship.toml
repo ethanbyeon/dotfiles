@@ -40,7 +40,7 @@ format = '([\[$all_status$ahead_behind\]]($style) )'
 
 [git_metrics]
 disabled = false
-added_style = "fg:#72E570"
+added_style = "fg:#9FE570"
 deleted_style = "fg:#D92135"
 only_nonzero_diffs = true
 format = "[+$added]($added_style) [-$deleted]($deleted_style) "
