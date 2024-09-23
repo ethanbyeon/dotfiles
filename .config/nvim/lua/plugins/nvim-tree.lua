@@ -2,7 +2,7 @@ local function setup_tree()
     local view = {
         side = "left",
         number = true,
-        width = 30,
+        width = 35,
         relativenumber = true,
     }
 
