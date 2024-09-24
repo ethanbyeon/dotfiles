@@ -5,7 +5,8 @@
 <div align="center">
   <img src="images/nvim_ss.png" alt="Neovim Config" width="90%" />
 
-  <a href=".config/nvim/README.md">Neovim Config</a>
+<a href=".config/nvim/README.md">Neovim Config</a>
+
 </div>
 
 <br>
@@ -13,7 +14,8 @@
 <div align="center">
   <img src="images/vscode_ss.png" alt="VS Code Config" width="90%" />
 
-  <a href="vscode/README.md">VS Code Config</a>
+<a href="vscode/README.md">VS Code Config</a>
+
 </div>
 
 <br>
@@ -21,7 +23,8 @@
 <div align="center">
   <img src="images/starship_ss.png" alt="Starship Config" width="90%" />
 
-  Starship Config
+Starship Config
+
 </div>
 
 <br>
@@ -29,7 +32,8 @@
 <div align="center">
   <img src="images/tmux_ss.png" alt="tmux Config" width="90%" />
 
-  tmux Config
+tmux Config
+
 </div>
 
 ## Setup Overview
@@ -61,25 +65,28 @@ To set up these dotfiles using GNU Stow, follow the steps below:
 
 1. **Clone the repository**:
 
-    ```
-    git clone https://github.com/ethanbyeon/dotfiles.git dotfiles
-    cd dotfiles/
-    ```
+   ```
+   git clone https://github.com/ethanbyeon/dotfiles.git ~/dotfiles
+   cd ~/dotfiles
+   ```
+
 2. **Install GNU Stow**:
 
-    For macOS (Homebrew):
-    ```
-    brew install stow
-    ```
+   For macOS (Homebrew):
+
+   ```
+   brew install stow
+   ```
 
 3. **Create Symlinks for Configurations**:
 
-    To symlink the configuration files (e.g., for `nvim`, `zsh`, or `tmux`), run:
-    ```
-    stow <package>
-    ```
+   To symlink the configuration files (e.g., for `nvim`, `zsh`, or `tmux`), run:
 
-    Replace `<package>` with the directory name of the configuration you want to symlink (e.g., `nvim`, `zsh`).
+   ```
+   stow <package>
+   ```
+
+   Replace `<package>` with the directory name of the configuration you want to symlink (e.g., `nvim`, `zsh`).
 
 > [!TIP]
 > After running the `stow` command, confirm that the configuration files are correctly placed and loaded on your system.
@@ -91,6 +98,7 @@ To set up these dotfiles using GNU Stow, follow the steps below:
 ### 🔄 Backing Up Existing Configurations
 
 To move your current configurations into your dotfiles repository, use the `--adopt` flag:
+
 ```
 stow <package> --adopt
 ```
@@ -105,6 +113,7 @@ This command will move any existing files (e.g., `~/.zshrc`) into your dotfiles 
 1. Clone the repository and navigate into its directory.
 
 2. Create symlinks for the desired packages using Stow:
+
 ```
 stow <package>
 ```
