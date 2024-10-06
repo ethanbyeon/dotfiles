@@ -32,7 +32,7 @@ truncate_to_repo = false
 [git_branch]
 symbol = ""
 style = "fg:#A6A6A6"
-format = "[󰇛](fg:#4C4C4C) [$branch $symbol]($style) "
+format = "[󰇛](fg:#4C4C4C) [$symbol $branch]($style) "
 
 [git_status]
 style = "fg:#A1E8E2"

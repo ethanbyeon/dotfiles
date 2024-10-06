@@ -148,9 +148,9 @@ local function setup_heirline()
 		{ -- Git Branch Name
 			provider = function(self)
 				if self.status_dict.head == "" then
-					return " Unknown  "
+					return "  Unknown "
 				end
-				return " " .. self.status_dict.head .. "  "
+				return "  " .. self.status_dict.head .. " "
 			end,
 			hl = { bold = false },
 		},
