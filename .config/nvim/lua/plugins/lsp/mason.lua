@@ -13,7 +13,6 @@ return {
                 "html",
                 "lua_ls",
                 "pyright",
-                "tsserver",
             },
         })
         require("mason-tool-installer").setup({
