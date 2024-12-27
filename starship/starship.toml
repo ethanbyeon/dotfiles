@@ -1,0 +1,76 @@
+format = """
+$username\
+$hostname\
+$python\
+$directory\
+$git_branch\
+$git_status\
+$git_metrics\
+$fill\
+$cmd_duration $jobs\
+$time\
+${custom.horangi}\
+$line_break\
+$character
+"""
+
+# Disable blank line at the start of prompt
+add_newline = false
+
+[fill]
+symbol = " "
+
+[username]
+show_always = true
+format = "[$user](fg:#B3A180) [󰀻](fg:#184E41) "
+
+[directory]
+read_only = ""
+read_only_style = "fg:#94F5D4"
+format = "[$path](fg:#26A682)[$read_only]( $read_only_style) "
+truncation_length = 3
+truncate_to_repo = false
+
+[git_branch]
+symbol = ""
+format = "[󰇛](fg:#4C4C4C) [$symbol $branch](fg:#B2B2B2) "
+
+[git_status]
+style = "fg:#94F5D4"
+format = '([\[$all_status$ahead_behind\]]($style) )'
+
+[git_metrics]
+disabled = false
+added_style = "fg:#22AD1F"
+# AD0618 C6061B
+deleted_style = "fg:#C6061B"
+only_nonzero_diffs = true
+format = "[+$added]($added_style) [-$deleted]($deleted_style) "
+
+[python]
+style = "fg:#94F5D4"
+pyenv_prefix = ""
+format = '[(\($virtualenv\) )]($style)'
+
+[jobs]
+symbol = ""
+number_threshold = 1
+format = "[$symbol](fg:#D92135)"
+
+[cmd_duration]
+style = "fg:#94F5D4"
+format = "[$duration]($style)"
+
+[custom.horangi]
+command = "echo '(OㅈO=マ'"
+when = "true"
+format = '[$output](fg:#B3A180)[󰀻 ](fg:#184E41)'
+
+[time]
+disabled = false
+time_format = "%H:%M"
+format = "[󰀻](fg:#184E41) [$time](fg:#26A682) [󰀻 ](fg:#184E41)"
+
+[character]
+success_symbol = "[](fg:#50E4AA)"
+error_symbol = "[](fg:#D92135)"
