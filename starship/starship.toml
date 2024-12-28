@@ -22,12 +22,12 @@ symbol = " "
 
 [username]
 show_always = true
-format = "[$user](fg:#B3A180) [󰀻](fg:#184E41) "
+format = "[$user](fg:#26A682) [󰀻](fg:#184E41) "
 
 [directory]
 read_only = ""
 read_only_style = "fg:#94F5D4"
-format = "[$path](fg:#26A682)[$read_only]( $read_only_style) "
+format = "[$path](fg:#B3A180)[$read_only]( $read_only_style) "
 truncation_length = 3
 truncate_to_repo = false
 
