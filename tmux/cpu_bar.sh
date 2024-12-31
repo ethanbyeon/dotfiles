@@ -19,7 +19,7 @@ generate_bar() {
 
   local filled_blocks=$(printf "%.0f" "$load_normalized")
   local empty_blocks=$((max_blocks - filled_blocks))
-  local load_percentage_rounded=$(printf "%.1f" "$load_percentage")
+  local load_percentage_rounded=$(printf "%.0f" "$load_percentage")
 
   colors=(
     "#[fg=#63030E]"
