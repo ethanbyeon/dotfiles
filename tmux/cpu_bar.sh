@@ -39,7 +39,7 @@ generate_bar() {
     if ((i <= filled_blocks)); then
       bar="${bar}${colors[$((i - 1))]}▮"
     else
-      bar="${bar}#[fg=#5C564C]▯"
+      bar="${bar}#[fg=#544E45]▯"
     fi
   done
 
