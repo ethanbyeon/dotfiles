@@ -14,7 +14,7 @@ local function setup_colorscheme()
 		no_underline = false,
 		styles = {
 			comments = {},
-			conditionals = { "italic" },
+			conditionals = {},
 		},
 		color_overrides = {
 			mocha = {
