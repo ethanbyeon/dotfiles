@@ -79,7 +79,7 @@ Statusline.active = function()
 		highlight("StatuslineSymbolOff", "󰀻"),
 		highlight("StatuslineSymbolOn", " %3l:%c "),
 		highlight("StatuslineSymbolOff", "󰀻 "),
-    highlight("StatuslineMode", "(CㅈC=マ"),
+    highlight("StatuslineMode", "(@ㅈ@=マ"),
     highlight("StatuslineSymbolOff", "󰀻 "),
 	})
 end
