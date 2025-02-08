@@ -34,100 +34,13 @@
 ---
 
 <p align="center">
-<span style="color: #1E6251;">•</span>
-<span style="color: #47C7A1;">•</span><span style="color: #1E6251;">•</span>
-<span style="color: #47C7A1;">•••</span>
-<span style="color: #B3A180;">(@ㅈ@=マ</span> 
-<span style="color: #47C7A1;">••</span>
-<span style="color: #1E6251;">••</span><span style="color: #47C7A1;">•</span>
-<span style="color: #B3A180;">(ㅋㅈㅋ~マ</span>
-<span style="color: #47C7A1;">•</span><span style="color: #1E6251;">••</span>
-<span style="color: #47C7A1;">••</span>
-<span style="color: #B3A180;">(~ㅈO=マ</span> 
-<span style="color: #47C7A1;">•••</span>
-<span style="color: #1E6251;">•• •</span>
-<br>
-<span style="color: #1E6251;">•••</span>
-<span style="color: #1E6251;">•</span><span style="color: #47C7A1;">••</span>
-<span style="color: #1E6251;">••</span><span style="color: #47C7A1;">•</span>
-<span style="color: #47C7A1;">•••</span>
-<span style="color: #1E6251;">•</span><span style="color: #47C7A1;">••</span>
-<span style="color: #1E6251;">•••</span>
-<span style="color: #1E6251;">•••</span>
-<span style="color: #1E6251;">•</span><span style="color: #47C7A1;">••</span>
-<span style="color: #1E6251;">•</span><span style="color: #47C7A1;">••</span>
-<span style="color: #47C7A1;">•••</span>
-<span style="color: #1E6251;">•••</span>
-<span style="color: #1E6251;">•••</span>
-<span style="color: #47C7A1;">•••</span>
-<span style="color: #47C7A1;">•••</span>
-<span style="color: #1E6251;">••</span><span style="color: #47C7A1;">•</span>
-<span style="color: #47C7A1;">•</span><span style="color: #1E6251;">••</span>
-<span style="color: #1E6251;">•••</span>
-<br>
-<span style="color: #1E6251;">• •• •• •••• •• • •••• •••••••••••• •••• • •• •••• •• •• •</span>
-<br>
-<span style="color: #1E6251;">•</span> 
-<span style="color: #47C7A1;">••</span>
-<span style="color: #B3A180;">(𝘖ㅈ𝘖=マ</span>
-<span style="color: #47C7A1;">••<span style="color: #1E6251;">••</span></span>
-<span style="color: #47C7A1;">••</span>
-<span style="color: #1E6251;">•</span>
-<span style="color: #47C7A1;">•</span><span style="color: #1E6251;">••</span>
-<span style="color: #94F5D4;">E</span> 
-<span style="color: #1E6251;">•</span>
-<span style="color: #94F5D4;">Y</span> 
-<span style="color: #1E6251;">•</span>
-<span style="color: #94F5D4;">B</span> 
-<span style="color: #1E6251;">••</span><span style="color: #47C7A1;">•</span>
-<span style="color: #1E6251;">•</span>
-<span style="color: #47C7A1;">••</span>
-<span style="color: #1E6251;">••</span><span style="color: #47C7A1;">••</span>
-<span style="color: #B3A180;">(OㅈO=マ</span>
-<span style="color: #47C7A1;">••</span>
-<span style="color: #1E6251;">•</span>
-<br>
-<span style="color: #1E6251;">•••</span>
-<span style="color: #47C7A1;">•••</span>
-<span style="color: #47C7A1;">••</span><span style="color: #47C7A1;">•</span>
-<span style="color: #1E6251;">•</span><span style="color: #47C7A1;">••</span>
-<span style="color: #1E6251;">•••</span>
-<span style="color: #1E6251;">•••</span>
-<span style="color: #1E6251;">•••</span>
-<span style="color: #1E6251;">•••</span>
-<span style="color: #1E6251;">•••</span>
-<span style="color: #1E6251;">•••</span>
-<span style="color: #1E6251;">•••</span>
-<span style="color: #1E6251;">•••</span>
-<span style="color: #1E6251;">•••</span>
-<span style="color: #47C7A1;">•••</span>
-<span style="color: #1E6251;">••</span><span style="color: #47C7A1;">•</span>
-<span style="color: #47C7A1;">••</span><span style="color: #1E6251;">•</span>
-<span style="color: #1E6251;">•••</span>
-<br>
-<span style="color: #1E6251;">• •• •• •••• •• • •••• •••••••••••• •••• • •• •••• •• •• •</span>
-<br>
-<span style="color: #47C7A1;">•</span>
-<span style="color: #1E6251;">••</span>
-<span style="color: #47C7A1;">•••</span>
-<span style="color: #B3A180;">(+ㅈO=マ</span>
-<span style="color: #47C7A1;">•</span><span style="color: #1E6251;">•</span>
-<span style="color: #47C7A1;">•</span><span style="color: #1E6251;">••</span>
-<span style="color: #B3A180;">(ㅜㅈㅜ~マ</span>
-<span style="color: #47C7A1;">••<span style="color: #1E6251;">•
-<span style="color: #1E6251;">•</span><span style="color: #47C7A1;">•</span>
-<span style="color: #B3A180;">(0ㅈO=マ</span>
-<span style="color: #47C7A1;">•••</span>
-<span style="color: #1E6251;">•</span><span style="color: #47C7A1;">•</span>
-<span style="color: #1E6251;">•</span>
+    <img src="assets/dotfiles_banner.png" alt="Dotfiles Banner" width="500">
 </p>
 
 ---
 
-<div style="display: flex; gap: 20px;">
-<div style="flex: 1;">
-  
 ## .setup
+
 - OS: macOS Sequoia
 - Terminal: [iTerm2](https://iterm2.com/)
 - Shell: Zsh
@@ -139,9 +52,6 @@
 - Font: [JetBrainsMonoNL Nerd Font](https://www.nerdfonts.com/font-downloads)
 - Icons: [NerdFonts](https://www.nerdfonts.com/)
 
-</div>
-<div style="flex: 1;">
-
 ## .file_structure
 
 ```
@@ -151,9 +61,6 @@
 ├── tmux/
 └── README.md
 ```
-
-</div>
-</div>
 
 ## .neovim
 
