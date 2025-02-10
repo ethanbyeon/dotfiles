@@ -34,7 +34,7 @@
 ---
 
 <p align="center">
-    <img src="assets/dotfiles_banner.png" alt="Dotfiles Banner" width="500">
+    <img src="assets/dotfiles_banner.svg" alt="Dotfiles Banner" width="500">
 </p>
 
 ---
