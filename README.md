@@ -29,6 +29,12 @@
       <p><strong>Starship</strong></p>
     </td>
   </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="assets/tmux_status_line_ss.png" alt="Tmux Status Line">
+      <p><strong>Tmux Status Line</strong></p>
+    </td>
+  </tr>
 </table>
 
 ---
