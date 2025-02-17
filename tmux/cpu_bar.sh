@@ -21,25 +21,33 @@ generate_bar() {
   local empty_blocks=$((max_blocks - filled_blocks))
   local load_percentage_rounded=$(printf "%.0f" "$load_percentage")
 
+  if (( filled_blocks > max_blocks )); then
+    filled_blocks=$max_blocks
+  elif (( filled_blocks < 0 )); then
+    filled_blocks=0
+  fi
+
+  empty_blocks=$(( max_blocks - filled_blocks ))
+
   colors=(
-    "#[fg=#63030E]"
-    "#[fg=#63030E]"
-    "#[fg=#800412]"
-    "#[fg=#800412]"
-    "#[fg=#9E0516]"
-    "#[fg=#9E0516]"
-    "#[fg=#BC061A]"
-    "#[fg=#BC061A]"
-    "#[fg=#D9071E]"
-    "#[fg=#D9071E]"
+    "#[fg=#500612]"
+    "#[fg=#500612]"
+    "#[fg=#740937]"
+    "#[fg=#740937]"
+    "#[fg=#9C095E]"
+    "#[fg=#9C095E]"
+    "#[fg=#CB078A]"
+    "#[fg=#CB078A]"
+    "#[fg=#FD02E4]"
+    "#[fg=#FD02E4]"
   )
 
   # Generate bar
   for i in $(seq 1 $max_blocks); do
-    if ((i <= filled_blocks)); then
-      bar="${bar}${colors[$((i - 1))]}▮"
+    if (( i <= filled_blocks )); then
+      bar+="${colors[$((i - 1))]}▮"
     else
-      bar="${bar}#[fg=#544E45]▯"
+      bar+="#[fg=#544E45]▯"
     fi
   done
 

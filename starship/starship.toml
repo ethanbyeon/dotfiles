@@ -22,7 +22,7 @@ symbol = " "
 
 [username]
 show_always = true
-format = "[$user](fg:#26A682) [󰀻](fg:#184E41) "
+format = "[$user](fg:#019882) [󰀻](fg:#075046) "
 
 [directory]
 read_only = ""
@@ -41,9 +41,9 @@ format = '([\[$all_status$ahead_behind\]]($style) )'
 
 [git_metrics]
 disabled = false
-added_style = "fg:#22AD1F"
+added_style = "fg:#01D100"
 # AD0618 C6061B
-deleted_style = "fg:#C6061B"
+deleted_style = "fg:#C50732"
 only_nonzero_diffs = true
 format = "[+$added]($added_style) [-$deleted]($deleted_style) "
 
@@ -55,7 +55,7 @@ format = '[(\($virtualenv\) )]($style)'
 [jobs]
 symbol = ""
 number_threshold = 1
-format = "[$symbol](fg:#D92135)"
+format = "[$symbol](fg:#FD044E)"
 
 [cmd_duration]
 style = "fg:#94F5D4"
@@ -64,13 +64,13 @@ format = "[$duration]($style)"
 [custom.horangi]
 command = "echo '(OㅈO=マ'"
 when = "true"
-format = '[$output](fg:#B3A180)[󰀻 ](fg:#184E41)'
+format = '[$output](fg:#B3A180)[󰀻 ](fg:#075046)'
 
 [time]
 disabled = false
 time_format = "%H:%M"
-format = "[󰀻](fg:#184E41) [$time](fg:#26A682) [󰀻 ](fg:#184E41)"
+format = "[󰀻](fg:#075046) [$time](fg:#019882) [󰀻 ](fg:#075046)"
 
 [character]
-success_symbol = "[](fg:#50E4AA)"
-error_symbol = "[](fg:#D92135)"
+success_symbol = "[](fg:#50E4B8)"
+error_symbol = "[](fg:#FD044E)"
