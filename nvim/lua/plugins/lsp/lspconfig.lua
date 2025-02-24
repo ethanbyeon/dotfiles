@@ -1,6 +1,8 @@
 local function setup_lsp()
 	local lspconfig = require("lspconfig")
-	local capabilities = require("cmp_nvim_lsp").default_capabilities()
+	local capabilities = vim.lsp.protocol.make_client_capabilities()
+	capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
+	local util = require("lspconfig/util")
 
 	require("mason-lspconfig").setup_handlers({
 		function(server_name)
@@ -22,10 +24,27 @@ local function setup_lsp()
 					"--offset-encoding=utf-16",
 				},
 				init_options = {
+          completeUnimported = true,
 					usePlaceholders = true,
-					completeUnimported = true,
 					clangdFileStatus = true,
 				},
+			})
+		end,
+		["gopls"] = function()
+			lspconfig["gopls"].setup({
+				capabilities = capabilities,
+				cmd = { "gopls" },
+				filetypes = { "go", "gomod", "gowork", "gotmpl" },
+				root_dir = util.root_pattern("go.work", "go.mod", ".git"),
+        settings = {
+          gopls = {
+            completeUnimported = true,
+            usePlaceholders = true,
+            analyses = {
+              unusedparams = true,
+            },
+          },
+        }
 			})
 		end,
 	})

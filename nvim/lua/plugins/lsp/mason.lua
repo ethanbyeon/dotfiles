@@ -10,6 +10,7 @@ return {
 			ensure_installed = {
 				"clangd",
 				"cssls",
+				"gopls",
 				"html",
 				"lua_ls",
 				"pyright",
@@ -19,10 +20,11 @@ return {
 			ensure_installed = {
 				"black",
 				"eslint_d",
+        "flake8",
+        "gofumpt",
+        "isort",
 				"prettier",
-				"isort",
 				"stylua",
-				"flake8",
 			},
 		})
 	end,

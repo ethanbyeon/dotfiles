@@ -4,6 +4,7 @@ local function setup_treesitter()
 			"c",
 			"cpp",
 			"css",
+      "go",
 			"html",
 			"javascript",
 			"lua",
